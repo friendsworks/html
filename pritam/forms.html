@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Form_Making</title>
+</head>
+<body>
+  +
+     </ul>
+     <form action="action_page.php">
+      <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" id="firstname" value=""><br>
+        Last name:<br>
+        <input type="text" id="lastname" value=""><br><br>
+        
+      </fieldset>
+
+  </ul>
+
+   <fieldset>
+     <legend>Address infromation:</legend>
+    Village:<br>
+     <input type="text" id="village" value=""><br>
+     Dist:<br>
+     <input type="text" id="district" value=""><br><br>
+     
+   </fieldset>
+
+
+
+
+ <Br></Br><button type="button" onclick="do_this()">SUBMIT!</button>
+</form> 
+<textarea name="" id="output" cols="30" rows="10"></textarea>
+<script>
+  function do_this(){
+    var f_name = document.getElementById("firstname").value;
+    var l_name = document.getElementById("lastname").value;
+    var add_v = document.getElementById("village").value;
+    var add_dist = document.getElementById("district").value;
+    var out_val = "Your name is "+ f_name+" "+l_name+". Your address is "+ add_v+","+add_dist+"."
+    document.getElementById("output").value = out_val;
+    
+    alert("Your file is submitted!");
+  }
+</script>  
+
+
+</body>
+</html>+
